@@ -1,8 +1,10 @@
-import './Home.css';
+import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Navbar />
+    </div>
   )
 }
 
