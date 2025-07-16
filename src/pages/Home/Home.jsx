@@ -6,6 +6,8 @@ import hero_title from './../../assets/hero_title.png';
 import play_icon from './../../assets/Play_icon.png';
 import info_icon from './../../assets/info_icon.png';
 import TitleCard from '../../components/TitleCard/TitleCard';
+import MovieCard from '../../components/MovieCards/MovieCard';
+import Footer from '../../components/Footer/Footer';
 
 
 const Home = () => {
@@ -27,7 +29,19 @@ const Home = () => {
                <TitleCard />
           </div>
         </div>
+        <div>
+         <MovieCard movieTitle="Popular" category="popular" />
+         <MovieCard movieTitle="Now Playing" category="now_playing"/>
+         <MovieCard movieTitle="Up Coming" category="upcoming" />
+         <MovieCard movieTitle="Top Rated" category="top_rated" />
+        </div>
+        <div>
+          <Footer />
+        </div>
+         
+
     </div>
+    
   )
 }
 
