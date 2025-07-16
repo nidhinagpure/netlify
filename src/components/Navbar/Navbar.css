@@ -1,0 +1,73 @@
+.navbar{
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    position: fixed;
+    z-index: 1; 
+}
+.navbar img {
+    width: 100px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-left: 40px;
+}
+.navbar-right ul{
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+.navbar-right ul li{
+    cursor: pointer;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  margin-right: 40px;
+}
+
+.navbar-left .icon {
+  width: 16px;
+  cursor: pointer;
+}
+.navbar-left .profile {
+  width: 35px;
+  border-radius: 10%;
+
+}
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    padding: 10px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.navbar .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+}
+
+
+
+
