@@ -11,8 +11,8 @@ const TitleCard = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToShow: 4,
+    slidesToScroll: 1,
   };
   return (
     <div className='title-card'>
@@ -25,7 +25,7 @@ const TitleCard = () => {
             <p>{cards.name}</p>
           </div>
         })}
-        </Slider>
+        </Slider >
 
       </div>
     </div>

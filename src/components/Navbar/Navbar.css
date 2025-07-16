@@ -1,10 +1,12 @@
 .navbar{
     width: 100%;
-    padding-top: 20px;
+    padding-top: 14px;
+    padding-bottom: 6px;
     justify-content: space-between;
     font-size: 14px;
     color: white;
     display: flex;
+    background-color: black;
     position: fixed;
     z-index: 1; 
 }
@@ -38,7 +40,7 @@
   cursor: pointer;
 }
 .navbar-left .profile {
-  width: 35px;
+  width: 30px;
   border-radius: 10%;
 
 }
