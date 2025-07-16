@@ -1,13 +1,15 @@
 
 .login{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(#0000007e, #0000007e), url(../../assets/background_banner.jpg);
-    padding: 32px 8%;
-    position: relative;
-
+    padding: 40px 0;
+    padding-left: 20px;
+    position: fixed;
 }
 .login-logo{
     width: 150px;
+    margin-right: 70px;
 }
 
 .login-form{
