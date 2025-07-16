@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router';
 
 
 const MovieCard = ({ movieTitle, category }) => {
@@ -18,7 +19,7 @@ const MovieCard = ({ movieTitle, category }) => {
     };
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?language=en-US&page=1`, options)
+        fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?language=en-US&page=1`,options)
             .then(res => res.json())
             .then(response => setApiData(response.results))
             .catch(err => console.error(err));
@@ -37,10 +38,10 @@ const MovieCard = ({ movieTitle, category }) => {
             <div className="card-list">
                 <Slider {...settings}>
                     {apiData.map((cards, index) => {
-                        return <div className="card" key={index}>
-                            <img src={`https://image.tmdb.org/t/p/w500`+cards.backdrop_path} alt="" />
+                        return <Link to={`/player/${cards.id}`} className="card" key={index}>
+                            <img src={`https://image.tmdb.org/t/p/w500` + cards.backdrop_path} alt="" />
                             <p>{cards.original_title}</p>
-                        </div>
+                        </Link>
                     })}
                 </Slider >
             </div>
