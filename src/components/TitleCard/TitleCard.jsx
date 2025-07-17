@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import cards_data from '../../assets/cards/Cards_data';
 
-
-
 const TitleCard = () => {
   var settings = {
     dots: true,
