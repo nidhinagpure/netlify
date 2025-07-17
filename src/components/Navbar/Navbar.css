@@ -6,7 +6,6 @@
     font-size: 14px;
     color: white;
     display: flex;
-    background-color: black;
     position: fixed;
     z-index: 1; 
 }
@@ -68,6 +67,9 @@
 }
 .navbar-profile:hover .dropdown{
     display: block;
+}
+.nav-dark{
+    background-color: #141414;
 }
 
 

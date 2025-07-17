@@ -1,12 +1,15 @@
 import './Player.css';
 import back_arrow_icon from '../../assets/back_arrow_icon.png';
 import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router';
+import { useParams } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+import Home from './../Home/Home';
+
 
 const player = () => {
 
+   const navigate = useNavigate();
   const { id } = useParams();
-  const navigate = useNavigate();
   const [apiData, setAipData] = useState({
     key: "",
     type: "",
@@ -33,7 +36,7 @@ const player = () => {
 
   return (
     <div className='player'>
-      <img src={back_arrow_icon} alt='' onClick={()=>{navigate(-2)}} />
+      <img src={back_arrow_icon} alt='' onClick={()=>{navigate('/')}} />
       <iframe width='80%' height='80%'
         src={`https://www.youtube.com/embed/${apiData.key}`}
         title='trailer' frameBorder='0' allowFullScreen>
