@@ -4,8 +4,7 @@ import search from './../../assets/search_icon.svg';
 import bellicon from './../../assets/bell_icon.svg';
 import profile from './../../assets/profile_img.png';
 import caret from './../../assets/caret_icon.svg';
-import { useEffect } from 'react';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const Navbar = () => {
   
@@ -20,7 +19,7 @@ const Navbar = () => {
       }
     })
   },[])
-
+  
   return (
     <>
       <nav ref={navRef}className='navbar'>

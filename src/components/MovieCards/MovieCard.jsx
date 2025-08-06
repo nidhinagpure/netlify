@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
-
-
 const MovieCard = ({ movieTitle, category }) => {
 
     const [apiData, setApiData] = useState([]);
@@ -51,4 +49,5 @@ const MovieCard = ({ movieTitle, category }) => {
 };
 
 
-export default MovieCard;
+export default MovieCard; 
+
